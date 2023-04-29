@@ -1,5 +1,57 @@
 # calculadorafreenbeck.github
+<html>
+    <head>
+     <title>Calculadora</title>
+    <link type="text/css"  rel="stylesheet" href="calcu.css"/>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="calcu.js" type="text/javascript"> </script>
+
+    </head>
+<body>
+
+ <div id="appBg"> 
+    <form name="calculator">
+   <input type="textfield" name="ans" value="" autocomplete="off" readonly>
+   
+   <input type="button"   class="borrar">
+   <br>
+   <input type="button" value="FB" onclick= "document,calculator.ans.value =(document.calculator.ans.value)"class="fb"> 
+   <input type="reset" value="C" class="c"> 
+   <input type="button" value="÷" onclick="document.calculator.ans.value+='/' " class="divisor">
+   <br>
+   <input type="button" value="7" onclick="document.calculator.ans.value+='7'"  class="seven">
+   <input type="button" value="8" onclick="document.calculator.ans.value+='8'"class="eight">
+   <input type="button" value="9" onclick="document.calculator.ans.value+='9'"class="nine">
+   <input type="button" value="+" onclick="document.calculator.ans.value+='+'"class="plus">
+   <br>
+   <input type="button" value="4" onclick="document.calculator.ans.value+='4'" class=" four ">
+   <input type="button" value="5" onclick="document.calculator.ans.value+='5'"class="five">
+   <input type="button" value="6" onclick="document.calculator.ans.value+='6'"class="six">
+   <input type="button" value="-" onclick="document.calculator.ans.value+='-'" class="minus">
+   <br>
+   <input type="button" value="1" onclick="document.calculator.ans.value+='1'"class="one">
+   <input type="button" value="2" onclick="document.calculator.ans.value+='2'"class="two">
+   <input type="button" value="3" onclick="document.calculator.ans.value+='3'"class="three">
+   <input type="button" value="x" onclick="document.calculator.ans.value+='*'"class="ex">
+   <br>
+   <input type="button" value="0" onclick="document.calculator.ans.value+='0'"class="zero">
+   <input type="button" value="." onclick="document.calculator.ans.value+='.'" class="dot">
+   <input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)" class="equal">
+   
+   <br>
+ </form>
+ </div>
+
+
+
+
+
+
+
+</body>
+</html>
 #appBg{
  box-sizing: border-box;
  height: 100%;
